@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Dirtyline 36Daysoftype 2022';
+    src: url('./fonts/Dirtyline36Daysoftype2022-Reg.woff2') format('woff2'),
+        url('./fonts/Dirtyline36Daysoftype2022-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magtis';
+    src: url('./fonts/Magtis-ExtraBold.woff2') format('woff2'),
+        url('./fonts/Magtis-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
