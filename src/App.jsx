@@ -1,20 +1,19 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import './App.css'
-import './components/boxmenu'
-import Boxmenu from './components/boxmenu'
-import Right from './components/right'
+import Right from './components/Right'
 import Line from './components/Line'
-import Footer from './components/footer'
+import Footer from './components/Footer'
+import Content from './components/Content'
 function App() {
   
 
   return (
-    <>
-      <Boxmenu />
+    <Fragment>
+      <Content />
       <Right />
       <Line />
       <Footer />
-    </>
+    </Fragment>
     )
 }
 

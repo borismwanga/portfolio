@@ -1,4 +1,4 @@
-export default function Boxmenu(){
+export default function Menu(){
     return(
         <div className="container">
              <div className="grid">

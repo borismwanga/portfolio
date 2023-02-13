@@ -85,6 +85,7 @@
      top: 50%;
      position: absolute;
        }
+
   section{
     max-width: 500px;
     transform: translateY(-100px);
@@ -93,7 +94,7 @@
     border: 5px solid #000000;
     border-radius:15px;
     box-shadow: 15px 15px 1px #000;
-    visibility: hidden;
+    /* visibility: hidden; */
   }
   #right{
     max-width:400px;
@@ -174,3 +175,5 @@
     font-style: normal; 
     font-size: 25px;
   }
+
+  
