@@ -18,7 +18,9 @@ body{
   background-size: 3em 3em;
   text-transform: capitalize;
 }
-
+input {
+  font-family: 'Space Grotesk', sans-serif;
+}
 @media (prefers-color-scheme: light) {
  
 }
