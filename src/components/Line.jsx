@@ -1,6 +1,6 @@
 export default function Line(){
     return(
-        <div class="line">
+        <div className="line">
             <h1>B</h1>
         </div>
         )

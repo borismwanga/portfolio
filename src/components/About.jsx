@@ -1,15 +1,20 @@
 export default function About(){
     return(
-        <section>
+        <section className="about">
             <p>
-            Lorem Iddpsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer took 
-            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
-            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Hi! I'm Boris Mwanga. I have a passion for coding and problem solving, and love building websites and applications. 
+            I am also passionate about music, football and universes around what I listen to 
+            and I am always curious to learn more when it comes to new technologies and creative coding.
             </p>
+
+            <p>Technologies I've been working with recently</p>
+            <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Ruby On Rails</li>
+                <li>TypeScript</li>
+            </ul>
+
         </section>
         )
 }

@@ -30,6 +30,10 @@
       font-weight	:700;
     
   }
+  .grid > div:hover{
+    transition: all 0.5 ease;
+    text-shadow: #ffff 2px 5px;
+  }
   .div1 { 
     grid-area: 1 / 1 / 3 / 2; 
     background: /*#20356E*/ #38dbff;
@@ -87,15 +91,81 @@
        }
 
   section{
-    max-width: 500px;
-    transform: translateY(-100px);
-    padding: 10px;
-    background:orange;
+    max-width: 600px;
+    /* transform: translateY(-100px); */
+    padding: 15px;
     border: 5px solid #000000;
     border-radius:15px;
     box-shadow: 15px 15px 1px #000;
     /* visibility: hidden; */
   }
+
+section > p {
+  font-size: 20px;
+}
+.about{
+  background:orange;
+}
+.contacts{
+  background: #00ff75;
+}
+
+.links{
+  display: flex;
+  justify-content: space-around;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  color: #ffff;
+}
+.btn{
+  padding: 15px 26px;
+  border: 2px solid #000000;
+  border-radius: 15px; 
+  box-shadow: 5px 4px 1px #000;
+  margin: 0 5px;
+
+}
+.btn:hover{
+  box-shadow: 3px 2px 1px #000;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form label{
+  font-size: 1.4em;
+  padding: 5px 0;
+}
+.form input{
+  font-size: 1.4em;
+  border-radius: 15px;
+  padding-left: 10px;
+  border: 2px solid #000000;
+  box-shadow: 5px 4px 1px #000;
+  background: transparent;
+
+}
+.form textarea{
+  min-height: 160px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  box-shadow: 5px 4px 1px #000;
+
+
+}
+.send{
+  width: 100px;
+  margin-top: 10px;
+ 
+}
   #right{
     max-width:400px;
     position:absolute;
