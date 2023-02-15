@@ -3,6 +3,7 @@ import Menu from "./Menu"
 import About from "./about"
 import Contacts from "./Contacts"
 import Projects from "./Projects"
+import Info from "./Info"
 
 export default function Content(){
       const [activeComponent, setActiveComponent] = useState("");
@@ -15,7 +16,7 @@ export default function Content(){
     <div className="content">
         <Menu handleClick={handleClick} activeComponent={activeComponent} />
         {activeComponent === "target1" && <Contacts />}
-        {activeComponent === "target2" && <About />}
+        {activeComponent === "target2" && <Info />}
         {activeComponent === "target4" && <Projects />}
     </div>
     )

@@ -23,7 +23,7 @@ export default [
     {
         id: 3,
         title:"NextDive",
-        description:"Chillwheel is a web application that allows users to view, report, and search for bike accidents and stolen bikes in their area. It is built using the Ruby on Rails framework and offers a map view to display incidents, a search and filter function to find specific incidents, and a report form to add new incidents. Users can also use the contact form to get in touch with the owner of a stolen bike if they have information that can help with its recovery.",
+        description:"NextDive is a web application built with Ruby on Rails that allows users to find and explore deep diving spots around the world. The application features a 3D globe that users can interact with to find diving spots and see information about them. Users can create an account to save their favorite diving spots and share them with others. The app also includes a social aspect where users can connect with other divers, join groups, and plan diving trips together. NextDive aims to provide a comprehensive and engaging platform for deep sea diving enthusiasts to connect with one another and discover new places to explore.",
         image: "https://live.staticflickr.com/65535/52689083375_bffb08e4a2_k.jpg",
         link: "https://www.nextdive.xyz/",
         github: "https://github.com/lau2424"

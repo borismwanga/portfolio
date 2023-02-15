@@ -1,4 +1,4 @@
-import Pdf from '../assets/Resume.pdf';
+// import Pdf from '../assets/resume.pdf';
 
 export default function About(){
     return(
@@ -17,7 +17,7 @@ export default function About(){
                 <li>TypeScripts</li>
             </ul>
 
-            <a href={Pdf} target="_blank" rel="noopener noreferrer" className="btn">My ddRésumé</a>
+            {/* <a href={Pdf} target="_blank" rel="noopener noreferrer" className="btn">My ddRésumé</a> */}
 
 
         </section>
