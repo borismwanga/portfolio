@@ -6,11 +6,12 @@ import Projects from "./Projects"
 import Info from "./Info"
 
 export default function Content(){
-      const [activeComponent, setActiveComponent] = useState("");
+  
+  const [activeComponent, setActiveComponent] = useState("");
 
   const handleClick = (component) => {
     setActiveComponent(component);
-  };
+  }
 
     return(
     <div className="content">

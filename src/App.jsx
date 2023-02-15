@@ -17,6 +17,7 @@ function App() {
       <Right />
       <Line />
       <Footer />
+      
     </Fragment>
     )
 }
