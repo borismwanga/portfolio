@@ -185,7 +185,7 @@ a:hover{
   margin-top: 10px;
  
 }
-  #right{
+  .right{
     max-width:400px;
     position:absolute;
     top:10px;
@@ -201,7 +201,8 @@ a:hover{
     flex-direction: column;
     align-items: end;
   }
-  #right > .date{
+  .right > .date{
+
     font-size: 40px;
     margin-top: 50%;
     display: flex;
@@ -211,7 +212,8 @@ a:hover{
     transition: all 0.5s ease;
 
   }
-  #right > .date:hover{
+  .right > .date:hover{
+
     transform: translate(-2px);
     text-shadow: 1px 3px 1px #000;
     color: #ff1a1a;
