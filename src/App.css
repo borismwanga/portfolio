@@ -1,5 +1,7 @@
 .content{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
     background: #ffb443;
@@ -95,7 +97,7 @@
 
   section{
     max-width: 600px;
-    transform: translateY(-100px);
+    /* transform: translateY(-100px); */
     padding: 15px;
     border: 5px solid #000000;
     border-radius:15px;
@@ -111,6 +113,15 @@ section > p {
 }
 .about{
   background:#38dbff;
+  transform: translateY(-100px);
+}
+.about > ul {
+  list-style:"*";
+  margin-left: 25px;
+  padding: 5px;
+}
+.about > ul li{
+
 }
 .contacts{
   background: #00ff75;
@@ -174,7 +185,7 @@ a:hover{
   margin-top: 10px;
  
 }
-  #right{
+  .right{
     max-width:400px;
     position:absolute;
     top:10px;
@@ -186,8 +197,27 @@ a:hover{
     font-weight: bold;
     font-style: normal; */
     font-size: 25px;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
+  .right > .date{
+    font-size: 40px;
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transition: all 0.5s ease;
+
+  }
+  .right > .date:hover{
+    transform: translate(-2px);
+    text-shadow: 1px 3px 1px #000;
+    color: #ff1a1a;
+
+  }
+  
   .half_background {
     background: linear-gradient(to top, var(--bot) 50%, var(--top) 50%);
     --top: transparent; --bot: yellow;

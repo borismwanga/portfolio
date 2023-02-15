@@ -27,7 +27,7 @@ export default function Projects(){
 
     return(
         <section className="projects">
-            <h2>Here are some of works </h2>
+            <h2>Here are some of works  </h2>
 
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {swip}
