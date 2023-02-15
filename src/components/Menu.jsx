@@ -11,21 +11,23 @@ export default function Menu(props){
       }
 
     return(
-        <div className="container" onClick={menuClick}>
+        <div className="container" >
             <div className="grid">
                 <div className={`div1 ${activeComponent === "target1" ? "active" : ""}`}
-                    onClick={() => handleClick("target1")}> 
+                    onClick={() => {handleClick("target1"), menuClick()}}> 
                     CONTACTS
                 </div>
 
                 <div className={`div2 ${activeComponent === "target2" ? "active" : ""}`}
-                    onClick={() => handleClick("target2")}> 
+                    onClick={() => {handleClick("target2"), menuClick()}}> 
                     ABOUT
                 </div>
-                <div className="div3"> PROFIL</div>
+                <div className="div3"> 
+                    BORIS 
+                </div>
 
                 <div className={`div4 ${activeComponent === "target4" ? "active" : ""}`}
-                    onClick={() => handleClick("target4")}>
+                    onClick={() => {handleClick("target4"), menuClick()}}>
                     PROJECT
                 </div>
             </div>
