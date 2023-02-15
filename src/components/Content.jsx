@@ -8,9 +8,9 @@ export default function Content(){
 
     return(
     <div className="content">
-        {/* <Menu /> */}
-        {/* <About /> */}
-        {/* <Contacts /> */}
+        <Menu />
+        <About />
+        <Contacts />
         <Projects />
     </div>
     )
