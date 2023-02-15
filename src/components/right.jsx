@@ -2,6 +2,7 @@ export default function Right(){
 
     const date = new Date();
     const year = date.getFullYear();
+
     return(
         <div className="right">
             <p>
@@ -9,6 +10,7 @@ export default function Right(){
                             passion for building unique and interactive websites. </span>
             </p>
             <span className="date">©{year}</span>
+
 
         </div>
         )

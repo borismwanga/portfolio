@@ -1,3 +1,5 @@
+import Pdf from '../assets/Resume.pdf';
+
 export default function About(){
     return(
         <section className="about">
@@ -7,13 +9,16 @@ export default function About(){
             and I am always curious to learn more when it comes to new technologies and creative coding.
             </p>
 
-            <p>Technologies I've been working with recently</p>
+            <p>Technologies I've been working with recently:</p>
             <ul>
                 <li>JavaScript (ES6+)</li>
                 <li>React</li>
                 <li>Ruby On Rails</li>
-                <li>TypeScript</li>
+                <li>TypeScripts</li>
             </ul>
+
+            <a href={Pdf} target="_blank" rel="noopener noreferrer" className="btn">My ddRésumé</a>
+
 
         </section>
         )
