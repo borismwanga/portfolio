@@ -4,10 +4,11 @@ export default function Footer() {
     return(
         <footer>
             <Marquee gradient={false} speed={50}>
-                I can be a React component, multiple React components, or just some text.
-                I can be a React component, multiple React components, or just some text.
-                I can be a React component, multiple React components, or just some text.
-                I can be a React component, multiple React components, or just some text.
+                <span className="marquee">
+                    Code is my art, and I take pride in crafting elegant solutions to complex problems -
+                    sic parvis magna -
+                    I am dedicated to writing code that is not only functional, but also maintainable, scalable, and well-documented -
+                </span>
             </Marquee>
         </footer>
         )
