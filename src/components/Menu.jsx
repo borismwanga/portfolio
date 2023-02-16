@@ -8,6 +8,7 @@ export default function Menu(props){
 
 
     const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
+    const isMid = useMediaQuery({ query: '(max-width: 1126px)' });
 
     const { handleClick, activeComponent } = props;
 
@@ -18,6 +19,8 @@ export default function Menu(props){
         if (isMobile) {
             gsap.to(".container",{scale:0, duration:0.5,  display:"none"})
             gsap.to("#mini",{autoAlpha:1, duration:0.5})
+        } else if (isMid){
+            gsap.to(".container",{x:-300, y:-410, scale:0.4, duration:0.5})
         }else{
             gsap.to(".container",{x:-450, y:-100, scale:0.5, duration:0.5})
         }
