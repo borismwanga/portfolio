@@ -3,7 +3,7 @@ import './App.css'
 import Line from './components/Line'
 import Footer from './components/footer'
 import Content from './components/Content'
-import Right from './components/Right'
+import Right from './components/right'
 
 
 function App() {
