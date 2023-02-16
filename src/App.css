@@ -450,10 +450,14 @@ a:hover{
       width: 100%;
       z-index: 100;
     }
+    .right{
+      z-index: 100 !important;
+
+    }
     .right > .date{
       font-size: 20px;
       display: grid;
-
+      display: none;
     }
     
    

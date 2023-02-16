@@ -19,6 +19,7 @@ export default function Menu(props){
         if (isMobile) {
             gsap.to(".container",{scale:0, duration:0.5,  display:"none"})
             gsap.to("#mini",{autoAlpha:1, duration:0.5})
+            gsap.to(".date",{autoAlpha:0, duration:0.5, display:"none"})
         } else if (isMid){
             gsap.to(".container",{x:-300, y:-410, scale:0.4, duration:0.5})
         }else{
