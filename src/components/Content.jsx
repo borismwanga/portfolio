@@ -1,6 +1,5 @@
 import {useState} from "react"
 import Menu from "./Menu"
-import About from "./about"
 import Contacts from "./Contacts"
 import Projects from "./Projects"
 import Info from "./Info"
