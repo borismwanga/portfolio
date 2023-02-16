@@ -1,11 +1,9 @@
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import './App.css'
-import Right from './components/Right'
 import Line from './components/Line'
 import Footer from './components/Footer'
 import Content from './components/Content'
-import { gsap } from "gsap";
-
+import Right from './components/Right'
 
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
       <Right />
       <Line />
       <Footer />
-      
     </Fragment>
     )
 }
