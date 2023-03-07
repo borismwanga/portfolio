@@ -1,4 +1,4 @@
-import Pdf from '../assets/resume.pdf';
+import Pdf from '../assets/resume_boris_mwanga.pdf';
 
 export default function Info(){
     return(
