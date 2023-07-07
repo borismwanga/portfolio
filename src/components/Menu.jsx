@@ -42,9 +42,9 @@ export default function Menu(props){
                     onClick={() => {handleClick("target2"), menuClick()}}> 
                     about
                 </div>
-                <Link to="/app" className="div3">
+                <Link to="/" className="div3">
                     <div > 
-                        apps 
+                        boris 
                     </div>
                 </Link>
 
