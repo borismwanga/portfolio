@@ -3,6 +3,8 @@ import Menu from "./Menu"
 import Contacts from "./Contacts"
 import Projects from "./Projects"
 import Info from "./Info"
+// import App from "./App"
+
 
 export default function Content(){
   

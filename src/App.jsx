@@ -1,25 +1,33 @@
 import { Fragment } from 'react'
+import { Routes, Route } from 'react-router-dom'; // Changed this line
 import './App.css'
-// import Right from '.components/Right'
-
 import Line from './components/Line'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import Content from './components/Content'
-import Right from './components/right'
-
-
+import Right from './components/Right'
+import Apps from './components/Apps' // Make sure the path is correct
 
 function App() {
-  
-
   return (
     <Fragment>
-      <Content />
-      <Right />
-      <Line />
-      <Footer />
+      <Routes>
+        <Route path="/" 
+          element=
+           {<>  
+            <Content />
+            <Right />
+            <Line />
+            <Footer />
+            </>} 
+            />
+        <Route path="/app" 
+          element=
+          {
+            <Apps />} 
+          />
+      </Routes>
     </Fragment>
     )
 }
 
-export default App
+export default App;
