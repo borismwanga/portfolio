@@ -11,8 +11,20 @@ function App() {
   return (
     <Fragment>
       <Routes>
-        <Route path="/" element={<><Content /><Right /><Line /><Footer /></>} />
-        <Route path="/app" element={<Apps />} />
+        <Route path="/" 
+          element=
+           {<>  
+            <Content />
+            <Right />
+            <Line />
+            <Footer />
+            </>} 
+            />
+        <Route path="/app" 
+          element=
+          {
+            <Apps />} 
+          />
       </Routes>
     </Fragment>
     )
