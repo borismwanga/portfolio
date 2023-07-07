@@ -40,16 +40,7 @@
    cursor: url("https://img.icons8.com/ios/50/null/hand-cursor.png"),pointer;
     
   } */
-  a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    border: 5px solid #000;
-    font-weight	:700;
-    text-transform: uppercase;
-    font-size: 30px;
-    padding: 50px;
-  }
+  
   .grid > div:hover{
     transition: all 0.5 ease;
     text-shadow: #dd7dff 2px 2px;
@@ -66,6 +57,16 @@
   .div3 { 
     grid-area: 3 / 1 / 4 / 2;
     background: #fff503/*E2BA48*/;
+  }
+  .div3 {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #000;
+    font-weight	:700;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 50px;
   }
   .div4 { 
     grid-area: 2 / 2 / 4 / 3;
@@ -369,7 +370,6 @@ a:hover{
   margin: auto;
   display: block;
   border-radius: inherit;
-
 }
 
 /*navigation*/
@@ -440,6 +440,7 @@ a:hover{
   }
   #mini > .div3{
     border-bottom-left-radius: inherit;
+    display: none;
 
   }
   #mini > .div4{
@@ -455,25 +456,29 @@ a:hover{
   /*tabs*/
 
   .react-tabs{
-    width: 500px;
     /* height: 700px; */
-    max-width: 600px;
+    width: 600px;
+    min-height: 600px;
     transition: all 1s ease;
     border-top:none;
+    height: 700px;
+    position: relative;
 
   }
   .react-tabs__tab{
-    background: #ff1a1a !important;
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
+    background: #fff503 !important;
 
   }
   .react-tabs__tab--selected{
     border: 5px solid #000000 !important;
     border-bottom: none !important;
+    background: #fff503 !important;
   }
   .react-tabs__tab-list{
     margin: 0 !important;
+    padding: 0 !important;
     border-bottom: none !important;
   }
   .react-tabs__tab-panel{
@@ -483,8 +488,29 @@ a:hover{
     box-shadow: 15px 15px 1px #000;
     border-radius:15px;
     border-top-left-radius: 0 !important;
+    background: #fff503 !important;
+    height: 100% !important;
+  }
+  .app-project-description{
+      max-height: 390px !important;
+  }
 
+  .tab-1{
+    background: #ff1a1a !important;
+  }
+  .tab-2{
+    background: #fff503;
+  }
 
+  /*ol li*/
+
+  ol {
+    margin-left: 10px;
+    padding: 15px;
+  }
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
 @media only screen and (max-width: 768px) {
@@ -503,8 +529,7 @@ a:hover{
       display: grid;
       display: none;
     }
-    
-   
+
     section{
       width: 90%;
       border: 5px solid #000000;
@@ -513,7 +538,23 @@ a:hover{
     .about{
       transform: translateY(0);
     }
-    
+    .react-tabs{
+      height: 100vh;
+      border-radius: none !important;
+    }
+    .react-tabs{
+      width: 100% !important;
+      border: none;
+      box-shadow: none !important;
+    }
+    .react-tabs__tab-panel{
+      border-radius: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    .react-tabs__tab{
+      background: #fff503 !important;
+    }
   }
   @media only screen and (max-width: 430px) {
   
@@ -553,7 +594,7 @@ a:hover{
     
     }
     .project-img{
-      width: 90%;
+      width: 100%;
       position: relative;
       border-radius: 15px;
       border: 2px solid #000000;
