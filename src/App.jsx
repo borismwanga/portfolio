@@ -4,8 +4,8 @@ import './App.css'
 import Line from './components/Line'
 import Content from './components/Content'
 import Apps from './components/Apps' // Make sure the path is correct
-import Footer from './components/footer';
-import Right from './components/Right';
+import Footer from './components/Footers';
+import Right from './components/Rights';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
           element=
            {<>  
             <Content />
-            <Right />
+            <Rights />
             <Line />
-            <Footer />
+            <Footers />
 
             </>} 
             />
