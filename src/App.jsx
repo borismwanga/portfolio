@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom'; // Changed this line
 import './App.css'
 import Line from './components/Line'
 import Content from './components/Content'
-import Right from './components/Right'
 import Apps from './components/Apps' // Make sure the path is correct
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           element=
            {<>  
             <Content />
-            <Right />
             <Line />
             </>} 
             />
