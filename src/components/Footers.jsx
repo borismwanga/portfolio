@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-export default function Footer() {
+export default function Footers() {
     return(
         <footer>
             <Marquee gradient={false} speed={50} pauseOnHover={true}>

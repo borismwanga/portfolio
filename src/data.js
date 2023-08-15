@@ -4,7 +4,7 @@ export default [
         id: 1,
         title:"DeShorts",
         description:"DeShorts is a Chrome extension that automatically converts YouTube Shorts URLs into regular YouTube video URLs. This allows you to view the video on the regular YouTube platform, giving you access to more features like the comments section, related videos, and more. ",
-        image: "src/assets/deshort.png",
+        image: "https://live.staticflickr.com/65535/53118535155_c3fd57e4f6_w.jpg",
         link: "https://github.com/borismwanga/deshorts",
         github: "https://github.com/borismwanga/deshorts"
 
