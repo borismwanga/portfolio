@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useState } from "react";
 import { useMediaQuery } from 'react-responsive'
-
+import { Link } from 'react-router-dom'
 
 
 export default function Menu(props){
@@ -35,20 +35,22 @@ export default function Menu(props){
             <div className="grid">
                 <div className={`div1 ${activeComponent === "target1" ? "active" : ""}`}
                     onClick={() => {handleClick("target1"), menuClick()}}> 
-                    CONTACTS
+                    contacts
                 </div>
 
                 <div className={`div2 ${activeComponent === "target2" ? "active" : ""}`}
                     onClick={() => {handleClick("target2"), menuClick()}}> 
-                    ABOUT
+                    about
                 </div>
-                <div className="div3"> 
-                    BORIS 
-                </div>
+                <Link to="/" className="div3">
+                    <div > 
+                        boris 
+                    </div>
+                </Link>
 
                 <div className={`div4 ${activeComponent === "target4" ? "active" : ""}`}
                     onClick={() => {handleClick("target4"), menuClick()}}>
-                    PROJECT
+                    projects
                 </div>
             </div>
         </div>

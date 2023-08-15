@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
-
 export default function ProjectCard(props){
     return(
         <div className='project-card'>
@@ -19,7 +18,7 @@ export default function ProjectCard(props){
                     <img src={props.item.image} alt="image" />
                 </div>
                 <div className="project-description">
-                {props.item.description}
+                    {props.item.description}
                 </div>
                 
         </div>

@@ -1,5 +1,5 @@
 # Boris's Portfolio Website
-Hi there! I'm Boris, a web developer with a passion for building beautiful, functional websites and web applications. Welcome to my portfolio! This site showcases my skills in front-end web development, specifically with React and GSAP. You can access the website at www.borismwan.ga.
+Hi there! I'm Boris, a web developer with a passion for building beautiful, functional websites and web applications. Welcome to my portfolio! This site showcases my skills in front-end web development, specifically with React and GSAP. You can access the website at www.borismwanga.site.
 
 ## Features
 This website showcases what I can do with front-end web development, and I used the following tools to build it:
