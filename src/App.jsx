@@ -4,8 +4,8 @@ import './App.css'
 import Line from './components/Line'
 import Content from './components/Content'
 import Apps from './components/Apps' // Make sure the path is correct
-import Footer from './components/Footers';
-import Right from './components/Rights';
+import Footers from './components/Footers';
+import Rights from './components/Rights';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive'
 import { gsap } from "gsap";
 
-export default function Right(){
+export default function Rights(){
 
     const date = new Date();
     const year = date.getFullYear();
