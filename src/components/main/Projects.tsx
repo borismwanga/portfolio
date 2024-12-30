@@ -1,71 +1,98 @@
+// Projects.tsx
 "use client"
-import React from "react"
+import React, { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
+import data from "@/data"
+import GoesOutComesInUnderline from "@/components/fancy/text/underline-goes-out-comes-in"
 
-import useScreenSize from "@/hooks/use-screen-size"
+
+/* import ScrambleHover from "@/components/fancy/text/scramble-hover"
+ */import useScreenSize from "@/hooks/use-screen-size"
 import DragElements from "@/components/fancy/blocks/drag-elements"
 
-const urls = [
-  "https://images.unsplash.com/photo-1683746531526-3bca2bc901b8?q=80&w=1820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1631561729243-9b3291efceae?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1635434002329-8ab192fe01e1?q=80&w=2828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1719586799413-3f42bb2a132d?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1720561467986-ca3d408ca30b?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1724403124996-64115f38cd3f?q=80&w=3082&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-]
+
 
 const randomInt = (min: number, max: number) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
+    return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 const Projects: React.FC = () => {
-  const screenSize = useScreenSize()
-  return (
-    <div className="w-full h-full relative overflow-hidden">
-      <h1 className="absolute text-xl md:text-4xl md:ml-36 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground uppercase w-full">
-        all your<span className="font-bold text-foreground"> memories. </span>
-      </h1>
-      <DragElements dragMomentum={false} className="p-40">
-        {urls.map((url, index) => {
-          const rotation = randomInt(-12, 12)
-          const width = screenSize.lessThan(`md`)
-            ? randomInt(90, 120)
-            : randomInt(120, 150)
-          const height = screenSize.lessThan(`md`)
-            ? randomInt(120, 140)
-            : randomInt(150, 180)
+    const screenSize = useScreenSize()
+    const [activeProject, setActiveProject] = useState<number | null>(null)
 
-          return (
-            <div
-              key={index}
-              className={`flex items-start justify-center bg-white shadow-2xl p-4`}
-              style={{
-                transform: `rotate(${rotation}deg)`,
-                width: `${width}px`,
-                height: `${height}px`,
-              }}
-            >
-              <div
-                className={`relative overflow-hidden`}
-                style={{
-                  width: `${width - 4}px`,
-                  height: `${height - 30}px`,
-                }}
-              >
-                <Image
-                  src={url}
-                  fill
-                  alt={`Analog photo ${index + 1}`}
-                  className="object-cover"
-                  draggable={false}
-                />
-              </div>
-            </div>
-          )
-        })}
-      </DragElements>
-    </div>
-  )
+    return (
+        <div className="w-full h-full relative overflow-hidden">
+            <h1 className="absolute font-appelGarmond text-xl md:text-4xl md:ml-36 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full">
+                all my<span className="font-bold text-foreground"> Projects. </span>
+            </h1>
+            
+            <DragElements dragMomentum={false} className="p-40">
+                {data.map((project) => {
+                    const rotation = randomInt(-12, 12)
+                    const width = screenSize.lessThan(`md`) ? randomInt(90, 120) : randomInt(120, 150)
+                    const height = screenSize.lessThan(`md`) ? randomInt(120, 140) : randomInt(150, 180)
+
+                    return (
+                        <div
+                            key={project.id}
+                            className="relative"
+                            onMouseEnter={() => setActiveProject(project.id)}
+                            /* onMouseLeave={() => setActiveProject(null)} */
+                        >
+                            <div
+                                className="flex items-start justify-center bg-white shadow-2xl p-4 hover:bg-[#0015ff] "
+                                style={{
+                                    transform: `rotate(${rotation}deg)`,
+                                    width: `${width}px`,
+                                    height: `${height}px`,
+                                }}
+                            >
+                                <div
+                                    className="relative overflow-hidden"
+                                    style={{
+                                        width: `${width - 4}px`,
+                                        height: `${height - 30}px`,
+                                    }}
+                                >
+                                    <Image
+                                        src={project.image}
+                                        fill
+                                        alt={project.title}
+                                        className="object-cover"
+                                        draggable={false}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+            </DragElements>
+
+            {activeProject && (
+                <div className="fixed right-0 z-10 top-28 w-1/3 p-12 ">
+                    {data.find(p => p.id === activeProject) && (
+                        <div className="space-y-4 font-appelGarmond ">
+                            <h2 className="text-4xl font-appelGarmondBold">{data.find(p => p.id === activeProject)?.title}</h2>
+                            <p className="text-center">{data.find(p => p.id === activeProject)?.description}</p>
+                            <div className="flex justify-center gap-4">
+                                <Link href={data.find(p => p.id === activeProject)?.link || '#'} 
+                                      className="text-blue-600 hover:text-blue-800" 
+                                      target="_blank">
+                                    <GoesOutComesInUnderline label="Visit" direction="left" />
+                                </Link>
+                                <Link href={data.find(p => p.id === activeProject)?.github || '#'} 
+                                      className="text-blue-600 hover:text-blue-800 " 
+                                      target="_blank">
+                                    <GoesOutComesInUnderline label="Github" direction="right" />
+                                </Link>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            )}
+        </div>
+    )
 }
 
 export default Projects

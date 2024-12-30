@@ -1,0 +1,43 @@
+import Link from "next/link"
+
+import CenterUnderline from "@/components/fancy/text/underline-center"
+import ComesInGoesOutUnderline from "@/components/fancy/text/underline-comes-in-goes-out"
+import GoesOutComesInUnderline from "@/components/fancy/text/underline-goes-out-comes-in"
+
+export default function Contact() {
+  return (
+    <div className="w-full h-full flex flex-col items-center justify-center font-appelGarmondLight">
+      <div className="flex flex-row font-overusedGrotesk items-start  h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
+        <div>Contact</div>
+        <ul className="flex flex-col space-y-1 h-full">
+          <Link className="hover:text-[#0015ff]" href="#">
+            <CenterUnderline label="LINKEDIN" />
+          </Link>
+          <Link className="hover:text-[#0015ff]" href="#">
+            <ComesInGoesOutUnderline label="INSTAGRAM" direction="right" />
+          </Link>
+          <Link className="hover:text-[#0015ff]" href="#">
+            <ComesInGoesOutUnderline label="X (TWITTER)" direction="left" />
+          </Link>
+
+          <div className="pt-12">
+            <ul className="flex flex-col space-y-1 h-full">
+              <Link className="hover:text-[#0015ff]" href="#">
+                <GoesOutComesInUnderline
+                  label="FANCY@FANCY.DEV"
+                  direction="left"
+                />
+              </Link>
+              <Link className="hover:text-[#0015ff]" href="#">
+                <GoesOutComesInUnderline
+                  label="HELLO@FANCY.DEV"
+                  direction="right"
+                />
+              </Link>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  )
+}
