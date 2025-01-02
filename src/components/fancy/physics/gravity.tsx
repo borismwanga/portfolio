@@ -94,7 +94,8 @@ import {
   
     useEffect(() => {
       if (!elementRef.current || !context) return
-      context.registerElement(idRef.current, elementRef.current, {
+      const id = idRef.current
+      context.registerElement(id, elementRef.current, {
         children,
         matterBodyOptions,
         bodyType,
@@ -105,9 +106,9 @@ import {
         angle,
         ...props,
       })
-  
-      return () => context.unregisterElement(idRef.current)
-    }, [props, children, matterBodyOptions, isDraggable])
+
+      return () => context.unregisterElement(id)
+    }, [props, children, matterBodyOptions, isDraggable, context, bodyType, sampleLength, x, y, angle])
   
     return (
       <div
@@ -140,11 +141,11 @@ import {
     ) => {
       const canvas = useRef<HTMLDivElement>(null)
       const engine = useRef(Engine.create())
-      const render = useRef<Render>()
-      const runner = useRef<Runner>()
+      const render = useRef<Render | null>(null)
+      const runner = useRef<Matter.Runner | null>(null)
       const bodiesMap = useRef(new Map<string, PhysicsBody>())
-      const frameId = useRef<number>()
-      const mouseConstraint = useRef<Matter.MouseConstraint>()
+      const frameId = useRef<number | null>(null)
+      const mouseConstraint = useRef<Matter.MouseConstraint | null>(null)
       const mouseDown = useRef(false)
       const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 })
   
@@ -243,7 +244,8 @@ import {
         const height = canvas.current.offsetHeight
         const width = canvas.current.offsetWidth
   
-        Common.setDecomp(require("poly-decomp"))
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
+        Common.setDecomp(require("poly-decomp")) // Required for concave bodies disable eslint
   
         engine.current.gravity.x = gravity.x
         engine.current.gravity.y = gravity.y
@@ -321,7 +323,7 @@ import {
           ).length > 0
   
         if (grabCursor) {
-          Events.on(engine.current, "beforeUpdate", (event) => {
+          Events.on(engine.current, "beforeUpdate", () => {
             if (canvas.current) {
               if (!mouseDown.current && !touchingMouse()) {
                 canvas.current.style.cursor = "default"
@@ -333,7 +335,7 @@ import {
             }
           })
   
-          canvas.current.addEventListener("mousedown", (event) => {
+          canvas.current.addEventListener("mousedown", () => {
             mouseDown.current = true
   
             if (canvas.current) {
@@ -344,7 +346,7 @@ import {
               }
             }
           })
-          canvas.current.addEventListener("mouseup", (event) => {
+          canvas.current.addEventListener("mouseup", () => {
             mouseDown.current = false
   
             if (canvas.current) {
