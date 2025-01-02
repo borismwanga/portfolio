@@ -44,7 +44,7 @@ const Menu = ({ activeComponent, setActiveComponent }: MenuProps) => {
             key={item.value}
             href="#"
             className={`text-4xl ${
-              activeComponent === item.value ? "text-[#0015ff]" : "hover:text-[#0015ff]"
+              activeComponent === item.value ? "text-[#0015ff] dark:text-[#ffea00]" : "hover:text-[#0015ff] dark:hover:text-[#ffea00]"
             }`}
             onClick={(e) => {
               e.preventDefault();

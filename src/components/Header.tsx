@@ -10,16 +10,16 @@ const Header = () => {
                 
             </div>
             <div className="flex items-start justify-between flex-col font-appelGarmond text-sm bottom-0">
-                <Link className="hover:text-[#0015ff]" target="_blank" href="https://www.linkedin.com/in/boris-mwanga-74282062/">
+                <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="https://www.linkedin.com/in/boris-mwanga-74282062/">
                     <ComesInGoesOutUnderline label="Linkedin" direction="left"/>
                 </Link>
-                <Link className="hover:text-[#0015ff]" target="_blank" href="https://bsky.app/profile/brysbrozers.bsky.social">
+                <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="https://bsky.app/profile/brysbrozers.bsky.social">
                     <ComesInGoesOutUnderline label="Bluesky" direction="right" />
                 </Link>
-                <Link className="hover:text-[#0015ff]" target="_blank" href="mailto:borismwanga@gmail.com">
+                <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="mailto:borismwanga@gmail.com">
                     <ComesInGoesOutUnderline label="Email" direction="left" />
                 </Link>
-                <Link className="hover:text-[#0015ff]" target="_blank" href="https://github.com/borismwanga">
+                <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="https://github.com/borismwanga">
                     <ComesInGoesOutUnderline label="Github" direction="right" />
                 </Link>
 
