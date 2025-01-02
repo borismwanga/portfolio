@@ -72,7 +72,7 @@ const DragElements: React.FC<DragElementsProps> = ({
           }}
           onDragEnd={() => setIsDragging(false)}
           whileDrag={{ cursor: "grabbing" }}
-          className={"absolute"}
+          className={"absolute right-5"}
         >
           {child}
         </motion.div>
