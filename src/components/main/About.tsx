@@ -6,7 +6,7 @@ import useScreenSize from "@/hooks/use-screen-size"
 import CirclingElements from "@/components/fancy/blocks/circling-elements"
 
 export const exampleImages = [
-    "/images/image.jpg",
+    "/images/borisimage.png",
     "https://images.unsplash.com/photo-1556962021-9d0303621643?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1624344965199-ed40391d20f2?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
