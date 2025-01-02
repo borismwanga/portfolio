@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
 
     return (
         <div className="w-full h-full relative overflow-hidden">
-            <h1 className="absolute font-appelGarmond text-xl md:text-4xl md:ml-36 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full">
+            <h1 className="absolute font-appelGarmond text-xl md:text-4xl  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full">
                 all my<span className="font-bold text-foreground"> Projects. </span>
             </h1>
             
@@ -70,11 +70,11 @@ const Projects: React.FC = () => {
             </DragElements>
 
             {activeProject && (
-                <div className="fixed right-0 z-10 top-28 w-1/3 p-12 ">
+                <div className="fixed right-left text-center text-4xl font-appelGarmondLight top-1/2  -translate-y-1/2 w-1/3  ">
                     {data.find(p => p.id === activeProject) && (
-                        <div className="space-y-4 font-appelGarmond ">
-                            <h2 className="text-4xl font-appelGarmondBold">{data.find(p => p.id === activeProject)?.title}</h2>
-                            <p className="text-center">{data.find(p => p.id === activeProject)?.description}</p>
+                        <div className="  ">
+                            <h2 className="font-bold">{data.find(p => p.id === activeProject)?.title}</h2>
+                            <p className="text-center ">{data.find(p => p.id === activeProject)?.description}</p>
                             <div className="flex justify-center gap-4">
                                 <Link href={data.find(p => p.id === activeProject)?.link || '#'} 
                                       className="text-blue-600 hover:text-blue-800" 

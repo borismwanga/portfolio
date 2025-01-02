@@ -10,30 +10,30 @@ export default function Contact() {
       <div className="flex flex-row font-overusedGrotesk items-start  h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
         <div>Contact</div>
         <ul className="flex flex-col space-y-1 h-full">
-          <Link className="hover:text-[#0015ff]" href="#">
+          <Link className="hover:text-[#0015ff]" href="https://www.linkedin.com/in/boris-mwanga-74282062/">
             <CenterUnderline label="LINKEDIN" />
           </Link>
-          <Link className="hover:text-[#0015ff]" href="#">
-            <ComesInGoesOutUnderline label="INSTAGRAM" direction="right" />
+          <Link className="hover:text-[#0015ff]" href="https://bsky.app/profile/brysbrozers.bsky.social">
+            <ComesInGoesOutUnderline label="BLUESKY" direction="right" />
           </Link>
-          <Link className="hover:text-[#0015ff]" href="#">
+          <Link className="hover:text-[#0015ff]" href="htps://x.com/borismwanga">
             <ComesInGoesOutUnderline label="X (TWITTER)" direction="left" />
           </Link>
 
           <div className="pt-12">
             <ul className="flex flex-col space-y-1 h-full">
-              <Link className="hover:text-[#0015ff]" href="#">
+              <Link className="hover:text-[#0015ff]" href="mailto:borismwanga@gmail.com#">
                 <GoesOutComesInUnderline
-                  label="FANCY@FANCY.DEV"
+                  label="BORISMWANGA@GMAIL.COM"
                   direction="left"
                 />
               </Link>
-              <Link className="hover:text-[#0015ff]" href="#">
+              {/* <Link className="hover:text-[#0015ff]" href="#">
                 <GoesOutComesInUnderline
                   label="HELLO@FANCY.DEV"
                   direction="right"
                 />
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </ul>
