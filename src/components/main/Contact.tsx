@@ -10,19 +10,19 @@ export default function Contact() {
       <div className="flex flex-row font-overusedGrotesk items-start  h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
         <div>Contact</div>
         <ul className="flex flex-col space-y-1 h-full">
-          <Link className="hover:text-[#0015ff]" href="https://www.linkedin.com/in/boris-mwanga-74282062/">
+          <Link className="hover:text-[#0015ff]" href="https://www.linkedin.com/in/boris-mwanga-74282062/ " target="_blank">
             <CenterUnderline label="LINKEDIN" />
           </Link>
-          <Link className="hover:text-[#0015ff]" href="https://bsky.app/profile/brysbrozers.bsky.social">
+          <Link className="hover:text-[#0015ff]" href="https://bsky.app/profile/brysbrozers.bsky.social" target="_blank">
             <ComesInGoesOutUnderline label="BLUESKY" direction="right" />
           </Link>
-          <Link className="hover:text-[#0015ff]" href="htps://x.com/borismwanga">
+          <Link className="hover:text-[#0015ff]" href="htps://x.com/borismwanga" target="_blank">
             <ComesInGoesOutUnderline label="X (TWITTER)" direction="left" />
           </Link>
 
           <div className="pt-12">
             <ul className="flex flex-col space-y-1 h-full">
-              <Link className="hover:text-[#0015ff]" href="mailto:borismwanga@gmail.com#">
+              <Link className="hover:text-[#0015ff]" href="mailto:borismwanga@gmail.com" target="_blank">
                 <GoesOutComesInUnderline
                   label="BORISMWANGA@GMAIL.COM"
                   direction="left"

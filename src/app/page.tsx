@@ -5,8 +5,8 @@ import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import About from "@/components/main/About";
 import Projects from "@/components/main/Projects";
-/* import Resume from "@/components/main/Resume";
- */import Contact from "@/components/main/Contact";
+import Resume from "@/components/main/Resume";
+import Contact from "@/components/main/Contact";
 import ModeToggle from "@/components/ModeToggle";
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
         return <About />;
       case "projects":
         return <Projects />;
-      /* case "resume":
-        return <Resume />; */
+      case "resume":
+        return <Resume />;
       case "contact":
         return <Contact />;
       default:
