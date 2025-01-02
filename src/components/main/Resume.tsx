@@ -6,7 +6,6 @@ export default function Resume() {
       <div className="pt-20 text-6xl sm:text-7xl md:text-8xl  w-full text-center font-calendas italic md:block hidden">
         Résumé
       </div>
-       
       <p className="pt-4 text-base sm:text-xl md:text-2xl  w-full text-center md:block hidden">
         And Technologies I have been working with the following recently
       </p>

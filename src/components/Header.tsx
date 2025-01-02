@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className=" py-4 border-b-2 border-b-black dark:border-b-white w-full  flex items-center justify-between">
             <div className="flex flex-col justify-end">
-                <span className="text-sm font-appelGarmondLight">Software Engineer and Designer</span>
+                <span className="text-sm font-appelGarmondLight">Full-Stack Developer and Designer</span>
                 <span className="text-5xl font-appelGarmondBold one-word-per-line">Boris Mwanga</span>
                 
             </div>
