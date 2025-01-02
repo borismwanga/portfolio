@@ -20,25 +20,28 @@ const About: React.FC = () => {
   const screenSize = useScreenSize()
 
   return (
-    <div className="w-full h-full  flex items-center justify-center">
-        <span className="z-10 text-center text-4xl font-appelGarmondLight w-1/2 leading-8">
-            Hi there! I amm Boris Mwanga, a passionate developer with a love for coding, problem-solving, and 
-            creating impactful websites and applications. Beyond my tech journey, I find inspiration in music, 
-            football, and the vibrant stories they bring to life. I am always curious and eager to explore new technologies, 
-            delve into creative coding, and expand my horizons. Let&apos;s build something amazing together!
-        </span>
-      <CirclingElements radius={screenSize.lessThan(`md`) ? 80 : 120}>
-        {exampleImages.map((url, index) => (
-          <div
-            key={index}
-            className="w-20 h-20 md:w-28 md:h-28 absolute -translate-x-1/2 -translate-y-1/2"
-          >
-            <Image src={url} fill alt="image" className="object-cover" />
-          </div>
-        ))}
-      </CirclingElements>
-     
-    </div>
+    <div className="w-full h-full flex items-center justify-center relative">
+  <span
+    className={`z-10 text-center text-3xl md:text-4xl font-appelGarmondLight md:w-1/2 
+    absolute md:relative leading-8 mix-blend-difference text-white`}
+  >
+    Hi there! I am Boris Mwanga, a passionate developer with a love for coding, problem-solving, and 
+    creating impactful websites and applications. Beyond my tech journey, I find inspiration in music, 
+    football, and the vibrant stories they bring to life. I am always curious and eager to explore new technologies, 
+    delve into creative coding, and expand my horizons. Let&apos;s build something amazing together!
+  </span>
+  <CirclingElements radius={screenSize.lessThan(`md`) ? 80 : 120}>
+    {exampleImages.map((url, index) => (
+      <div
+        key={index}
+        className="w-20 h-20 md:w-28 md:h-28 absolute -translate-x-1/2 -translate-y-1/2"
+      >
+        <Image src={url} fill alt="image" className="object-cover" />
+      </div>
+    ))}
+  </CirclingElements>
+</div>
+
   )
 }
 
