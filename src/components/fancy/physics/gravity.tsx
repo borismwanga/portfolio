@@ -426,7 +426,7 @@ import {
         }
         frameId.current = requestAnimationFrame(updateElements)
         isRunning.current = true
-      }, [updateElements, canvasSize])
+      }, [updateElements])
   
       const stopEngine = useCallback(() => {
         if (!isRunning.current) return
@@ -463,7 +463,7 @@ import {
         })
         updateElements()
         handleResize()
-      }, [])
+      }, [canvasSize.height, canvasSize.width, handleResize, stopEngine, updateElements])
   
       useImperativeHandle(
         ref,
@@ -472,7 +472,7 @@ import {
           stop: stopEngine,
           reset,
         }),
-        [startEngine, stopEngine]
+        [reset, startEngine, stopEngine]
       )
   
       useEffect(() => {
