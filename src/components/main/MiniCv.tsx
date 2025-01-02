@@ -63,11 +63,11 @@ const MiniCv = () => {
 
   return (
     <div className="w-full h-full font-appelGarmond">
-      <div className="absolute top-0 right-0 p-4 z-50">
-        <Button onClick={handleDownload} className="flex items-center gap-2">
-          <Download size={16} />
-          Download PDF
-        </Button>
+      <div className="absolute top-0 right-0 p-2 md:p-4 z-50">
+      <Button onClick={handleDownload} className="flex items-center gap-2">
+        <Download size={16} />
+        <span className="hidden md:inline">Download PDF</span>
+      </Button>
       </div>
       <div className='flex justify-between w-full'>
       <div className="w-1/2">
@@ -101,7 +101,7 @@ const MiniCv = () => {
           <h2 className="text-2xl font-semibold mb-4">Languages</h2>
           <div className="flex gap-4">
             {languages.map((language) => (
-              <span key={language} className="border px-2 py-1 rounded-md text-sm px-4 py-2 rounded-lg">
+              <span key={language} className="border px-2 py-1 rounded-md text-sm ">
                 {language}
               </span>
             ))}

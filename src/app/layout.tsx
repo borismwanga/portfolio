@@ -79,7 +79,7 @@ export default function RootLayout({
           ${appelGarmondBoldItalic.variable}
           ${appelGarmondLight.variable}
           ${appelGarmondLightItalic.variable}
-          w-screen h-screen bg-[#F2F2F2] dark:bg-[#0d0d0d] 
+          w-screen h-dvh bg-[#F2F2F2] dark:bg-[#0d0d0d] 
           `
         }
       >

@@ -7,7 +7,7 @@ import GoesOutComesInUnderline from "@/components/fancy/text/underline-goes-out-
 export default function Contact() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center font-appelGarmondLight">
-      <div className="flex flex-row font-overusedGrotesk items-start  h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
+      <div className="flex flex-row font-overusedGrotesk items-start  h-full py-36 uppercase space-x-8 text-xl md:text-2xl lg:text-3xl">
         <div>Contact</div>
         <ul className="flex flex-col space-y-1 h-full">
           <Link className="hover:text-[#0015ff]" href="https://www.linkedin.com/in/boris-mwanga-74282062/ " target="_blank">

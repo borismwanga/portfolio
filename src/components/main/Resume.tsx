@@ -3,15 +3,15 @@ import MiniCv from "./MiniCv"
 export default function Resume() {
   return (
     <div className="w-full h-full flex flex-col relative font-appelGarmond">
-      <div className="pt-20 text-6xl sm:text-7xl md:text-8xl  w-full text-center font-calendas italic">
+      <div className="pt-20 text-6xl sm:text-7xl md:text-8xl  w-full text-center font-calendas italic md:block hidden">
         Résumé
       </div>
        
-      <p className="pt-4 text-base sm:text-xl md:text-2xl  w-full text-center">
+      <p className="pt-4 text-base sm:text-xl md:text-2xl  w-full text-center md:block hidden">
         And Technologies I have been working with the following recently
       </p>
       <MiniCv />
-      <Gravity gravity={{ x: 0, y: 1 }} className="w-full h-full">
+      <Gravity gravity={{ x: 0, y: 1 }} className="w-full h-full md:block hidden">
         <MatterBody
           matterBodyOptions={{ friction: 0.5, restitution: 0.2 }}
           x="30%"

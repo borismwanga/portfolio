@@ -70,11 +70,12 @@ const Projects: React.FC = () => {
             </DragElements>
 
             {activeProject && (
-                <div className="fixed right-left text-center text-4xl font-appelGarmondLight top-1/2  -translate-y-1/2 w-1/3  ">
+                <div className="fixed right-left text-center md:text-4xl text-sm font-appelGarmondLight top-1/2  -translate-y-1/2 md:w-1/3 w-1/2  md:backdrop-filter 
+          backdrop-blur-sm bg-opacity-10  ">
                     {data.find(p => p.id === activeProject) && (
                         <div className="  ">
                             <h2 className="font-bold">{data.find(p => p.id === activeProject)?.title}</h2>
-                            <p className="text-center ">{data.find(p => p.id === activeProject)?.description}</p>
+                            <p className="text-center  ">{data.find(p => p.id === activeProject)?.description}</p>
                             <div className="flex justify-center gap-4">
                                 <Link href={data.find(p => p.id === activeProject)?.link || '#'} 
                                       className="text-blue-600 hover:text-blue-800" 
