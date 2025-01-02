@@ -13,7 +13,7 @@ const Header = () => {
                 <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="https://www.linkedin.com/in/boris-mwanga-74282062/">
                     <ComesInGoesOutUnderline label="Linkedin" direction="left"/>
                 </Link>
-                <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="https://bsky.app/profile/brysbrozers.bsky.social">
+                <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="https://bsky.app/profile/borismwanga.com">
                     <ComesInGoesOutUnderline label="Bluesky" direction="right" />
                 </Link>
                 <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" target="_blank" href="mailto:borismwanga@gmail.com">
