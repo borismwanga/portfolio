@@ -4,7 +4,7 @@ import localfont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Cursor from "@/components/Cursor";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const appelGarmondBold = localfont({
   src:[{
@@ -168,6 +168,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <SpeedInsights/>
             <Cursor />
           </ThemeProvider>
         
