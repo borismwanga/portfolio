@@ -13,7 +13,7 @@ export default function Contact() {
           <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" href="https://www.linkedin.com/in/boris-mwanga-74282062/ " target="_blank">
             <CenterUnderline label="LINKEDIN" />
           </Link>
-          <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" href="https://bsky.app/profile/brysbrozers.bsky.social" target="_blank">
+          <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" href="https://bsky.app/profile/borismwanga.com" target="_blank">
             <ComesInGoesOutUnderline label="BLUESKY" direction="right" />
           </Link>
           <Link className="hover:text-[#0015ff] dark:hover:text-[#ffea00]" href="htps://x.com/borismwanga" target="_blank">
