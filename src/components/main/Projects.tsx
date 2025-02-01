@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
     return (
         <div className="w-full h-full relative overflow-hidden">
             <h1 className="absolute font-appelGarmond text-xl md:text-4xl  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full">
-                all my<span className="font-bold text-foreground"> Projects. </span>
+                selected<span className="font-bold text-foreground"> Projects. </span>
             </h1>
             
             <DragElements dragMomentum={false} className="p-40">
@@ -73,20 +73,24 @@ const Projects: React.FC = () => {
                 <div className="fixed right-left text-center md:text-4xl text-sm font-appelGarmondLight top-1/2  -translate-y-1/2 md:w-1/3 w-1/2  md:backdrop-filter 
           backdrop-blur-sm bg-opacity-10  ">
                     {data.find(p => p.id === activeProject) && (
-                        <div className="  ">
+                        <div className="">
                             <h2 className="font-bold">{data.find(p => p.id === activeProject)?.title}</h2>
-                            <p className="text-center  ">{data.find(p => p.id === activeProject)?.description}</p>
+                            <p className="text-center">{data.find(p => p.id === activeProject)?.description}</p>
                             <div className="flex justify-center gap-4">
-                                <Link href={data.find(p => p.id === activeProject)?.link || '#'} 
-                                      className="text-blue-600 hover:text-blue-800" 
-                                      target="_blank">
-                                    <GoesOutComesInUnderline label="Visit" direction="left" />
-                                </Link>
-                                <Link href={data.find(p => p.id === activeProject)?.github || '#'} 
-                                      className="text-blue-600 hover:text-blue-800 " 
-                                      target="_blank">
-                                    <GoesOutComesInUnderline label="Github" direction="right" />
-                                </Link>
+                                {data.find(p => p.id === activeProject)?.link && (
+                                    <Link href={data.find(p => p.id === activeProject)?.link ?? "#"} 
+                                        className="text-blue-600 hover:text-blue-800" 
+                                        target="_blank">
+                                        <GoesOutComesInUnderline label="Visit" direction="left" />
+                                    </Link>
+                                )}
+                                {data.find(p => p.id === activeProject)?.github && (
+                                    <Link href={data.find(p => p.id === activeProject)?.github ?? '#'} 
+                                        className="text-blue-600 hover:text-blue-800" 
+                                        target="_blank">
+                                        <GoesOutComesInUnderline label="Github" direction="right" />
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     )}
