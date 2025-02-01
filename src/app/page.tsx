@@ -34,7 +34,7 @@ export default function Home() {
         {renderComponent()}
       </div>
       <Menu activeComponent={activeComponent} setActiveComponent={setActiveComponent} />
-      <div className="absolute bottom-0 left-0 p-6 z-10 md:p-12 md:fixed">
+      <div className="absolute bottom-0 left-0 p-6 z-10 md:p-12 md:fixed ">
         <ModeToggle />
       </div>
     </div>
