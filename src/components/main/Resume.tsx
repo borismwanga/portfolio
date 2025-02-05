@@ -2,7 +2,7 @@ import Gravity, { MatterBody } from "@/components/fancy/physics/gravity"
 import MiniCv from "./MiniCv"
 export default function Resume() {
   return (
-    <div className="w-full h-full flex flex-col relative font-appelGarmond">
+    <div className="w-full h-full flex flex-col relative instrumentSerif">
       <div className="pt-20 text-6xl sm:text-7xl md:text-8xl  w-full text-center font-calendas italic md:block hidden">
         Résumé
       </div>

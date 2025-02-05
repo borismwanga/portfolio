@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import localfont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -56,6 +56,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -157,6 +162,7 @@ export default function RootLayout({
           ${appelGarmondBoldItalic.variable}
           ${appelGarmondLight.variable}
           ${appelGarmondLightItalic.variable}
+          ${instrumentSerif.variable}
           w-screen h-dvh bg-[#F2F2F2] dark:bg-[#0d0d0d] 
           `
         }

@@ -22,7 +22,7 @@ const About: React.FC = () => {
   return (
     <div className="w-full h-full flex items-center justify-center relative">
   <span
-    className={`z-10 text-center text-3xl md:text-4xl font-appelGarmondLight md:w-1/2 
+    className={`z-10 text-center text-3xl md:text-4xl instrumentSerif font-thin md:w-1/2 
     absolute md:relative leading-8 mix-blend-difference text-white`}
   >
     Hi there! I am Boris Mwanga, a passionate developer with a love for coding, problem-solving, and 

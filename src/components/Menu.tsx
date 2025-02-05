@@ -31,7 +31,7 @@ const Menu = ({ activeComponent, setActiveComponent }: MenuProps) => {
       <div className={`
         p-12 border-b-black flex flex-col items-start 
         fixed md:absolute bottom-0 right-0 
-        font-appelGarmond z-10
+        instrumentSerif z-10
         md:translate-x-0
         transition-transform duration-300
         ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
