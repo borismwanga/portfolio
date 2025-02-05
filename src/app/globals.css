@@ -27,6 +27,9 @@ body {
 .one-word-per-line {
   word-spacing: 100vw; 
 }
+.instrumentSerif {
+  font-family: var(--font-instrument-serif)
+}
 
 @layer base {
   :root {

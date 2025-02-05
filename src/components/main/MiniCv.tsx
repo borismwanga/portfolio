@@ -62,7 +62,7 @@ const MiniCv = () => {
   };
 
   return (
-    <div className="w-full h-full font-appelGarmond">
+    <div className="w-full h-full instrumentSerif">
       <div className="absolute top-0 right-0 p-2 md:p-4 z-50">
       <Button onClick={handleDownload} className="flex items-center gap-2">
         <Download size={16} />

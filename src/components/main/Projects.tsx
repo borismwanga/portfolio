@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
 
     return (
         <div className="w-full h-full relative overflow-hidden">
-            <h1 className="absolute font-appelGarmond text-xl md:text-4xl  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full">
+            <h1 className="absolute instrumentSerif text-xl md:text-4xl  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-muted-foreground w-full">
                 selected<span className="font-bold text-foreground"> Projects. </span>
             </h1>
             
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
             </DragElements>
 
             {activeProject && (
-                <div className="fixed right-left text-center md:text-4xl text-sm font-appelGarmondLight top-1/2  -translate-y-1/2 md:w-1/3 w-1/2  md:backdrop-filter 
+                <div className="fixed right-left text-center md:text-4xl text-sm instrumentSerif top-1/2  -translate-y-1/2 md:w-1/3 w-1/2  md:backdrop-filter 
           backdrop-blur-sm bg-opacity-10  ">
                     {data.find(p => p.id === activeProject) && (
                         <div className="">
