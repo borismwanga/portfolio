@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
                             /* onMouseLeave={() => setActiveProject(null)} */
                         >
                             <div
-                                className="flex items-start justify-center bg-white shadow-2xl p-4 hover:bg-[#0015ff] "
+                                className="flex items-start justify-center bg-white shadow-2xl p-4 hover:bg-[#0015ff] dark:hover:bg-[#ffea00] "
                                 style={{
                                     transform: `rotate(${rotation}deg)`,
                                     width: `${width}px`,
@@ -79,14 +79,14 @@ const Projects: React.FC = () => {
                             <div className="flex justify-center gap-4">
                                 {data.find(p => p.id === activeProject)?.link && (
                                     <Link href={data.find(p => p.id === activeProject)?.link ?? "#"} 
-                                        className="text-blue-600 hover:text-blue-800" 
+                                        className="text-blue-600 dark:text-[#ffea00] hover:text-blue-800 dark:hover:text-[#ffea00]" 
                                         target="_blank">
                                         <GoesOutComesInUnderline label="Visit" direction="left" />
                                     </Link>
                                 )}
                                 {data.find(p => p.id === activeProject)?.github && (
                                     <Link href={data.find(p => p.id === activeProject)?.github ?? '#'} 
-                                        className="text-blue-600 hover:text-blue-800" 
+                                        className="text-blue-600 dark:text-[#ffea00] hover:text-blue-800 dark:hover:text-[#ffea00]" 
                                         target="_blank">
                                         <GoesOutComesInUnderline label="Github" direction="right" />
                                     </Link>
